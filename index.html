@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Top Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input, select, button {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top Up Game</h1>
+        <form action="#" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+
+            <label for="id-game">ID Game</label>
+            <input type="text" id="id-game" name="id-game" placeholder="Masukkan ID game" required>
+
+            <label for="nominal">Nominal Top Up</label>
+            <select id="nominal" name="nominal" required>
+                <option value="">Pilih Nominal</option>
+                <option value="10">10 Diamonds</option>
+                <option value="50">50 Diamonds</option>
+                <option value="100">100 Diamonds</option>
+                <option value="500">500 Diamonds</option>
+            </select>
+
+            <label for="payment">Metode Pembayaran</label>
+            <select id="payment" name="payment" required>
+                <option value="">Pilih Metode</option>
+                <option value="gopay">GoPay</option>
+                <option value="dana">Dana</option>
+                <option value="ovo">OVO</option>
+                <option value="bank">Transfer Bank</option>
+            </select>
+
+            <button type="submit">Top Up Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
