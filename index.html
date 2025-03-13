@@ -205,9 +205,9 @@
                     "Authorization": `Bearer ${apiKey}`
                 },
                 body: JSON.stringify({
-                    model: "gpt-4-vision-preview",
-                    messages: [{ role: "user", content: message, image: imageData }]
-                })
+  "model": "gpt-3.5-turbo",
+  "messages": [{ "role": "user", "content": "Halo!" }]
+        })
             })
             .then(response => response.json())
             .then(data => {
